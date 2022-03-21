@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Perhitungan Nilai Akhir Mahasiswa</title>
+    <h1 style="text-align: center">HITUNG NILAI AKHIR MAHASISWA</h1>
+    <p style="text-align: center">Created By Liza Umma Nur Hidayah</p>
+    <p style="text-align: center">|</p>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      p {
+        margin: 0;
+      }
+      .keterangan {
+        display: inline-flex;
+        width: 150px;
+      }
+      .input {
+        width: 100px;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="hitung-nilai" method="POST">
+      <center>
+        <label for="Nama Mahasiswa">
+          <p class="keterangan">Nama Mahasaiswa</p>
+          <span>:</span>
+          <input class="input" type="name" name="name" max="14" min="0" id="name" required />
+        </label>
+      </center>
+      <br />
+      <center>
+        <label for="NIM">
+          <p class="keterangan">NIM</p>
+          <span>:</span>
+          <input class="input" type="number" name="number" max="14" min="0" id="number" required />
+        </label>
+      </center>
+      <br />
+      <center>
+        <label for="presensi">
+          <p class="keterangan">Presensi Kehadiran</p>
+          <span>:</span>
+          <input class="input" type="number" name="presensi" max="14" min="0" id="presensi" required />
+        </label>
+      </center>
+      <br />
+      <center>
+        <label for="nilaiUts">
+          <p class="keterangan">Nilai UTS</p>
+          <span>:</span>
+          <input class="input" type="number" name="nilaiUts" max="100" min="0" id="nilaiUts" required />
+        </label>
+      </center>
+      <br />
+      <center>
+        <label for="nilaiUas">
+          <p class="keterangan">Nilai UAS</p>
+          <span>:</span>
+          <input class="input" type="number" name="nilaiUas" max="100" min="0" id="nilaiUas" required />
+        </label>
+      </center>
+      <br />
+      <center>
+        <label for="nilaiTugas">
+          <p class="keterangan">Nilai Tugas</p>
+          <span>:</span>
+          <input class="input" type="number" name="nilaiTugas" max="100" min="0" id="nilaiTugas" required />
+        </label>
+      </center>
+      <br />
+      <center>
+        <input id="hitung" type="submit" value="Hitung" />
+        <br />
+        <label for="nilaiAkhir">
+          <p class="keterangan">Nilai Akhir</p>
+          <span>:</span>
+          <input class="input" type="text" name="nilaiAkhir" id="nilaiAkhir" disabled />
+        </label>
+      </center>
+      <br />
+      <center>
+        <label for="nilaiHuruf">
+          <p class="keterangan">Nilai Huruf</p>
+          <span>:</span>
+          <input class="input" type="text" name="nilaiHuruf" id="nilaiHuruf" disabled />
+        </label>
+      </center>
+    </form>
+
+    <script scr="style.css"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
